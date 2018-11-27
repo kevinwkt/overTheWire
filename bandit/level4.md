@@ -9,4 +9,4 @@ Finally, we enter bandit4 the same way as before by simply using ```cat``` with 
 
 and finally,  
 
-```ssh -p 2220 bandit3@bandit.labs.overthewire.org```
+```ssh -p 2220 bandit4@bandit.labs.overthewire.org```
