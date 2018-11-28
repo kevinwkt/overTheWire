@@ -36,6 +36,7 @@ rm -Rf /tmp/mybandit13
 shell = pwn.ssh(user, host, port, passwd)
 
 new_passwd = shell.run(cmd).recvall().strip()
+print new_passwd
 shell.close()
 
 shell = pwn.ssh("bandit13", host, port, new_passwd)

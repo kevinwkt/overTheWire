@@ -22,7 +22,7 @@ while [ "$(file ./f | grep -c ASCII)" -eq 0 ]; do
         mv *.bin f;  
     fi  
 done &&  
-cat ./f | xargs -n1 | awk 'length($0)>10'  ] ] ] ]  
+cat ./f | xargs -n1 | awk 'length($0)>10'  
 ```
 
 Finally, we ssh to verify the passkey obtained above.  
