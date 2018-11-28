@@ -2,18 +2,18 @@
 
 import pwn
 
-user = "bandit6"
+user = "bandit7"
 host = "bandit.labs.overthewire.org"
-passwd = "DXjZPULLxYr17uwoI01bNLQbtFemEgo7"
+passwd = "HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs"
 port = 2220
 
-cmd = "find / -type f -size 33c -user bandit7 -group bandit6 2>/dev/null | xargs cat"
+cmd = "grep millionth ./data.txt | awk '{print $2}'"
 
 shell = pwn.ssh(user, host, port, passwd)
 
 new_passwd = shell.run(cmd).recvall().strip()
 shell.close()
 
-shell = pwn.ssh("bandit7", host, port, new_passwd)
+shell = pwn.ssh("bandit8", host, port, new_passwd)
 
 print shell.ls()
