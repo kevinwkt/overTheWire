@@ -1,7 +1,6 @@
 #!/bin/python2
 
 import pwn
-import nmap
 
 user = "bandit17"
 host = "bandit.labs.overthewire.org"
