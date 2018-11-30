@@ -8,4 +8,4 @@ This is a week-long challenge where I will learn on the fly while I try to compl
 
 Warning: Because of my lack of experience my bash scripts and the python scripts will be messy and might be inefficient. 
 
-Requisits: pwn installed for python2
+Requisits: *pwn* installed for python2
