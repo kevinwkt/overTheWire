@@ -11,7 +11,6 @@ cmd = "./bandit20-do cat /etc/bandit_pass/bandit20"
 
 shell = pwn.ssh(user, host, port, passwd)
 new_passwd = shell.run(cmd).recv().strip()
-print new_passwd
 
 shell.close()
 
