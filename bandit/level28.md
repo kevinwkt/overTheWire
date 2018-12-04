@@ -13,7 +13,7 @@ Once we get the folder, we ```cd``` into it ```cat``` the "README" file and filt
 ```
 cd repo
 cat README | egrep -o "[a-zA-Z0-9]{32}"
-rem -Rf /tmp/mybandit28
+rm -Rf /tmp/mybandit28
 ```
 
 Finally, we ssh to verify the passkey obtained above.
