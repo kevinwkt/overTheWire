@@ -14,7 +14,7 @@ When we use the command above, we see the following:
  | |_) | (_| | | | | (_| | | |_ / /| (_) |
  |_.__/ \__,_|_| |_|\__,_|_|\__|____\___/
 Connection to localhost closed.
-</pre>```
+```</pre>
 
 We realize that we are logged out immediately. So we check the "/etc/passwd" to check for the login shell for bandit26 with the following:  
 
