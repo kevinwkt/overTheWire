@@ -13,6 +13,7 @@ cmd = """
 # 3. git clone ssh://bandit27-git@localhost/home/bandit27-git/repo
 # 4. cd repo
 # 5. cat /README | egrep -o "[a-zA-Z0-9]{32}"
+# 6. rm -Rf /tmp/mybandit28
 
 echo "0ef186ac70e04ea33b4c1853d2526fa2"
 """
