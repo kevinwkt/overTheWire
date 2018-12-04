@@ -1,6 +1,7 @@
 #!/bin/python2
 
 import pwn
+import re
 
 user = "bandit24"
 host = "bandit.labs.overthewire.org"
@@ -21,7 +22,7 @@ rm -Rf /tmp/mybandit25
 """
 
 shell = pwn.ssh(user, host, port, passwd)
-new_passwd = shell.run(cmd).recvline_regex("uN")
+new_passwd = shell.run(cmd).recvline_regex(re.compile("[a-zA-Z0-9]{32}"))
 
 shell.close()
 
