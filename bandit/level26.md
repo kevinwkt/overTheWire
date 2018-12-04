@@ -35,7 +35,10 @@ more ~/text.txt
 exit 0
 ```
 
-We can then assume that when you log in, ```sh``` is run and then ```more```, where the text above will probably be seen. We now have to find a way to see the password before it logs us out with the ```exit 0``` code. To do this, we use ```more``` to go to VISUALMODE by changing the terminal size super small so that more doesn't get to show us everything so it will wait for us to call on ```vi``` presing on the "v" button.
+We can then assume that when you log in, ```sh``` is run and then ```more```, where the text above will
+probably be seen. We now have to find a way to see the password before it logs us out with the ```exit 0``` 
+code. To do this, we use ```more``` to go to VISUALMODE by changing the terminal size super small so that 
+more doesn't get to show us everything so it will wait for us to call on ```vi``` presing on the "v" button.
 
 So basically enter vi by:  
 1. We make the terminal small enough for it to not be able to print "bandit26".
