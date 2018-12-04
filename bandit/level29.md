@@ -17,7 +17,7 @@ cat README.md
 
 We then realize that the password has been changed to the following:  
 
-``` <pre>
+``` 
 # Bandit Notes
 Some notes for level29 of bandit.
 
@@ -25,7 +25,7 @@ Some notes for level29 of bandit.
 
 - username: bandit29
 - password: xxxxxxxxxx
-</pre> ```
+```
 
 So we use ```git log``` to see past commits. We then see 3 results:  
 
