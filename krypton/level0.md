@@ -6,6 +6,10 @@ Given the encoded string 'S1JZUFRPTklTR1JFQVQ=' using Base64, we decode it using
 
 and we get the flag!!!
 
+If you want to do this the more boring way, we can just 
+```echo "S1JZUFRPTklTR1JFQVQ=" | base64 -d```
+on most linux machines.
+
 We then ssh to verify the passkey obtained above.
 
 ```ssh -p 2222 krypton1@krypton.labs.overthewire.org```
