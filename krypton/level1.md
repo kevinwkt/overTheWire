@@ -1,6 +1,6 @@
 # Level 1
 
-The instructions for this challenge tells us that the passowrd is in ROT13. We can use the script I wrote rot to solve this problem:
+The instructions for this challenge tells us that the password is in ROT13. We can use the script I wrote rot to solve this problem:
 
 ```cat krypton2 | ./rot 13```
 

@@ -15,7 +15,7 @@ def rot(n):
     enc = ''
     for c in str:
         if chr(c) not in special_chars:
-            enc += chr((c&lower)|((u_mask&c)+n)%26)
+            enc += chr((c&lower)|(((u_mask&(c-1))+n)%26)+1)
         else:
             enc += chr(c)
 
